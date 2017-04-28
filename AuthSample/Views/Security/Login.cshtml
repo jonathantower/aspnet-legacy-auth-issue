@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+</head>
+<body>
+	<h2>login</h2>
+	@using (Html.BeginForm("login", "security", FormMethod.Post))
+	{
+		<input type="hidden" name="username" value="username" />
+		<input type="hidden" name="password" value="password" />
+		<input type="submit" value="Login" />
+	}
+</body>
+</html>
